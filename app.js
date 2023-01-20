@@ -1,6 +1,6 @@
 var express = require('express');
 var server = express();
-const HTTP_PORT = 80;
+const HTTP_PORT = 8080;
 const cors = require('cors');
 const path = require('path');
 server.use(express.json());
