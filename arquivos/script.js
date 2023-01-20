@@ -4,7 +4,7 @@ const principal =() => {
 
       const loadData = () => {
         const xhr = new XMLHttpRequest()
-        xhr.open("GET", "http://website-env.eba-89nbb254.us-east-1.elasticbeanstalk.com/leitura")
+        xhr.open("GET", "177.71.239.29/leitura")
         xhr.send(null)
         xhr.onreadystatechange = () => {
             if(xhr.readyState === 4){
