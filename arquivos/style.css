@@ -1,0 +1,166 @@
+body{
+    background-color:rgba(16, 27, 63, 0.952);
+}
+
+.principal{
+    max-width: 950px;
+    margin: 0 auto;
+    font-family: "Source Code Pro", monospace;
+    background-color: rgba(16, 27, 63, 0.952);
+}
+
+.areatitulo{
+    padding-bottom: 5px;
+    text-align: center;
+    border-radius: 8px;
+    color: rgb(250, 250, 250);
+
+}
+
+#base-layout{
+    display: flex;
+    height: 85%;
+    font-family: "Source Code Pro", 'Courier New', Courier, monospace;
+    color: #2de6f3;
+}
+
+#layout-esquerdo{
+width: 70%;
+
+}
+
+#layout-esquerdo-1{
+    height: 75%;
+    color: #00ffff;
+    position: relative;
+    top: 0;
+    background-image: url("planta-1.png");
+    background-size: 90%;
+    background-repeat: no-repeat ;
+    background-position: center;
+    border: 5px solid #12597a;
+
+
+}
+
+.sensor-portao-peq-normal{
+    background-color: #38db17;
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    position: absolute;
+    left: 92%;
+    top: 35%;
+}
+
+.sensor-portao-peq-alarmado{
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    position: absolute;
+    left: 92%;
+    top: 35%;
+    animation-name: alarme;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+.sensor-portao-grd-normal{
+    background-color:  #38db17;
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    position: absolute;
+    left: 92%;
+    top: 74%;
+}
+
+.sensor-portao-grd-alarmado{
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    position: absolute;
+    left: 92%;
+    top: 74%;
+    animation-name: alarme;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.sensor-infra-sala-normal{
+    background-color:  #38db17;
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    position: absolute;
+    left: 63%;
+    top: 44%;
+}
+
+.sensor-infra-sala-alarmado{
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    position: absolute;
+    left: 63%;
+    top: 44%;
+    animation-name: alarme;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.sensor-infra-coz-normal{
+    background-color: #38db17;
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    position: absolute;
+    left: 48%;
+    top: 62%;
+}
+
+
+.sensor-infra-coz-alarmado{
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    position: absolute;
+    left: 48%;
+    top: 62%;
+    animation-name: alarme;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes alarme {
+    from {background-color: yellow;}
+    to {background-color: red;}
+}
+
+
+
+#layout-esquerdo-2{
+    height: 23%;
+    border: 5px solid #12597a;
+}
+
+#layout-direito{
+    width: 30%;
+    height: 100%;
+    border: 5px solid #12597a;
+    }
+
+#layout-direito-1{
+    height: 55%;
+    border: 1px solid #12597a;
+}
+#layout-direito-2{
+    height: 30%;
+    border: 1px solid #12597a;
+}
+
+#layout-direito-3{
+    height: 14%;
+    border: 1px solid #12597a;
+}
