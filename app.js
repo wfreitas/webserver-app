@@ -4,8 +4,10 @@ const HTTP_PORT = 8080;
 const cors = require('cors');
 const path = require('path');
 server.use(express.json());
-server.use(express.static('./esp32-app-casa/arquivos'));
+server.use(express.static('./arquivos'));
 
+server.set('view engine', 'ejs');
+server.set('views', './views');
 
 
 const obejto = {
@@ -14,6 +16,7 @@ const obejto = {
     IS: "ON",
     IC: "ON"
 }
+
 
 server.use((req, res, next) => {
 	//Qual site tem permissão de realizar a conexão, no exemplo abaixo está o "*" indicando que qualquer site pode fazer a conexão
@@ -24,13 +27,12 @@ server.use((req, res, next) => {
     next();
 });
 
-server.get('/teste',(req,res)=> {
-  res.sendFile(path.resolve(__dirname, "./appcasaweb.html"))
-  //res.sendFile(path.resolve(__dirname, './appcasaweb.html'))
-});
+
+server.get('/', (req, res) => {
+  res.render('index');
+})
 
 server.get("/leitura", (req, res) => {
-
   console.log(obejto);
   return res.send(obejto);
 })

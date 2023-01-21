@@ -4,7 +4,7 @@ const principal =() => {
 
       const loadData = () => {
         const xhr = new XMLHttpRequest()
-        xhr.open("GET", "177.71.239.29/leitura")
+        xhr.open("GET", "192.168.100.9/leitura")
         xhr.send(null)
         xhr.onreadystatechange = () => {
             if(xhr.readyState === 4){
